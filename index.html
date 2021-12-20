@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<script src="ruffle.js"></script>
+    </head>
+    <body>
+		<div id= "input">
+		<input type="file" accept="application/x-shockwave-flash">
+		</div>
+		<div id= "player">	
+        </div>
+    </body>
+	<script>
+	(function localFileVideoPlayer() {
+	'use strict'
+    var playSelectedFile = function (event) {
+	const swf = document.createElement("embed");
+	swf.setAttribute('type', "application/x-shockwave-flash");
+	swf.setAttribute('src',URL.createObjectURL(this.files[0]));
+	document.getElementById("player").appendChild(swf);  
+  }
+  var inputNode = document.querySelector('input');
+  inputNode.addEventListener('change', playSelectedFile, false)
+})();
+	</script>
+</html>
