@@ -12,21 +12,7 @@
         </div>
     </body>
 	<script>
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
+
 	(function localFileVideoPlayer() {
 	'use strict'
     var playSelectedFile = function (event) {
@@ -37,14 +23,7 @@ function getCookie(cname) {
   }
   var inputNode = document.querySelector('input');
   inputNode.addEventListener('change', playSelectedFile, false)
-if (localStorage.getItem('keyforgame') == 'American1944') {
 
-}
-else {
-var element = document.getElementById("input");
-element.parentNode.removeChild(element);
-	localStorage.setItem('keyforgame', 'asdf');
-}
 })();
 	</script>
 </html>
