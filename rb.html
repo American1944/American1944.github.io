@@ -97,7 +97,7 @@
   }
   return "";
 }
-    if (getCookie("keyforgame") == "American1944") {
+    if (localStorage.getItem("keyforgame")) {
     
     }
     else{
@@ -107,7 +107,8 @@
     element.parentNode.removeChild(element);
         var element = document.getElementById("jsgame");
     element.parentNode.removeChild(element);
-        document.cookie = "keyforgame=asdf;path=/;expires=Fri, 31 Dec 2055 08:00:00 GMT;"
+        localStorage.setItem("keyforgame", "asdf");
+
     }
     (function() {
     function fin(ok) {
