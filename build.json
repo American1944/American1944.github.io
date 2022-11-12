@@ -1,0 +1,13 @@
+{
+"productName": "Cartoon Strike",
+"dataUrl": "cartoon-strike.data.unityweb",
+"asmCodeUrl": "cartoon-strike.asm.code.unityweb",
+"asmMemoryUrl": "cartoon-strike.asm.memory.unityweb",
+"asmFrameworkUrl": "cartoon-strike.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36",
+"cacheControl": {"dataUrl": "must-revalidate"}
+}
